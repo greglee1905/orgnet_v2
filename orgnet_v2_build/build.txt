@@ -1,0 +1,9 @@
+Requirements for Build: 
+
+pyenv 3.8.3 (orgnet)
+Torch 1.5.1
+
+Using CookieCutter Data Science: 
+https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science 
+
+
