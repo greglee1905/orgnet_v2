@@ -1,9 +1,39 @@
-Requirements for Build: 
+Building from CookieCutter Template: 
+[AT SOME POINT AUTOMATE THIS INTO A SCRIPT]
 
-pyenv 3.8.3 (orgnet)
-Torch 1.5.1
+1. Create a new python environment utilizing pyenv 
+    - pyenv virtualenv 3.4.0 venv
 
-Using CookieCutter Data Science: 
-https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science 
+2. Install needed packages via pip
+    -pip install Torch=1.5.1
+    -pip install pandas
 
+3. Create a repo on github and clone it into folder on the local machine
+    -git clone xx.github.com
+    or for an existing folder
+        1. git init 
+        2. git add . 
+        3. git commit -m "first commit"
+        4. git remote add origin https://github.com/greglee1905/orgnet_v2.git
+        5. git remote -v
+        6. git push -u origin master 
+
+4. Create the cookie cutter template 
+    - cookiecutter https://github.com/drivendata/cookiecutter-data-science 
+
+5. pip freeze to view and all requirements to requirements.txt 
+6. make requirements to ensure all packages are installed and ready to go
+7. Connecting to aws services: 
+    - Create AWS ID and secret 
+    - region name: us-west-1
+    - output json  [UNSURE IF THIS CORRECT OR NOT]
+8. So far it seems that these secrets are held within the terminal. Not sure if they need to be within the env file. 
+
+
+
+https://bost.ocks.org/mike/make/
+
+http://zmjones.com/make/ 
+
+https://www.oreilly.com/openbook/make3/book/index.csp
 
